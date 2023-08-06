@@ -9,7 +9,7 @@ export const searchNews=async(req,res)=>{
             url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=d114f7f8a8bd42fc9b85336ee25c7463&q=${search}&sortBy=popularity&page=${1}&pageSize=20`;
 
         }
-        console.log("here");
+        console.log("hereeddd");
         let data = await fetch(url);
         let parsed_data = await data.json();
         res.status(200).json({data:parsed_data});
