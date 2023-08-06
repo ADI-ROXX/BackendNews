@@ -2,7 +2,7 @@
 
 export const searchNews=async(req,res)=>{
     const search=req.body.search;;
-
+    console.log("here");
     try {    
         let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=d114f7f8a8bd42fc9b85336ee25c7463&page=${1}&pageSize=20`;
         if(search!=''){
